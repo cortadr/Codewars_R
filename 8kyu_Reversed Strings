@@ -1,0 +1,20 @@
+********* PROBLEM **********
+
+Complete the solution so that it reverses the string passed into it.
+
+'world'  =>  'dlrow'
+'word'   =>  'drow'
+
+********** SOLUTION **********
+
+solution <- function(s){
+  # Split the string into individual characters
+  chars <- strsplit(s, "")[[1]]
+  # Reverse the order of characters
+  reversedChars <- rev(chars)
+  # Join the reversed characters back into a single string
+  reversedString <- paste(reversedChars, collapse = "")
+  
+  return(reversedString)
+  
+}
