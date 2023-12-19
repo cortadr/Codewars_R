@@ -1,0 +1,10 @@
+********* PROBLEM **********
+
+DESCRIPTION:
+This code does not execute properly. Try to figure out why.
+
+********** SOLUTION **********
+
+mul <- function(a, b) {
+  a * b # try to figure out why it doesn't work!
+}
