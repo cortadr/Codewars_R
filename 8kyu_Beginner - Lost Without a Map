@@ -1,0 +1,18 @@
+********* PROBLEM **********
+
+Given an array of integers, return a new array with each value doubled.
+
+For example:
+
+[1, 2, 3] --> [2, 4, 6]
+
+********** SOLUTION **********
+
+maps <- function(v) {
+  res <- numeric(length(v))  # Create an empty numeric vector
+  for (i in seq_along(v)) {
+    res[i] <- v[i] * 2
+  }
+  return(res)
+
+}
