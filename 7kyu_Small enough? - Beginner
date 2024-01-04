@@ -1,0 +1,18 @@
+********* PROBLEM **********
+
+You will be given an array and a limit value. You must check that all values in the array are below or equal to the limit value. If they are, return true. Else, return false.
+
+You can assume all values in the array are numbers.
+
+********* SOLUTION **********
+
+small_enough <- function(vector, limit) {
+  for (i in vector) {
+    if (i <= limit) {
+      next
+    } else {
+      return (FALSE)
+    }
+  } 
+  return (TRUE)
+}
