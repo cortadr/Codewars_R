@@ -1,0 +1,15 @@
+********* PROBLEM **********
+
+Write a function which calculates the average of the numbers in a given list.
+
+Note: Empty arrays should return 0.
+
+********* SOLUTION **********
+
+find_average <- function(vec){
+  if (sum(vec) != 0) { 
+    (sum(vec)/length(vec))  
+  } else {
+    return (0)
+  }
+}
