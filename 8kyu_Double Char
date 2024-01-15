@@ -1,0 +1,21 @@
+********* PROBLEM **********
+
+Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+
+Examples (Input -> Output):
+* "String"      -> "SSttrriinngg"
+* "Hello World" -> "HHeelllloo  WWoorrlldd"
+* "1234!_ "     -> "11223344!!__  "
+Good Luck!
+
+********* SOLUTION **********
+
+double_char <- function(input_string) {
+  duplicated_str <- ""
+  
+  for (char in strsplit(input_string, NULL)[[1]]) {
+    duplicated_str <- paste0(duplicated_str, char, char)
+  }
+  
+  return(duplicated_str)
+}
